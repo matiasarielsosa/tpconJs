@@ -1,0 +1,18 @@
+.nav-link1 {
+    color :white
+}
+.container-fluid{
+  text-align: center;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction:row ;
+    justify-content:center;
+    margin: 5px;
+   
+  
+}
+
+ 

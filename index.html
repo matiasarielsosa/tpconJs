@@ -10,15 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-
+    
   </style>
+  
 </head>
 <body>
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand"  href="#"> 
-          <img src="codoacodo.png" alt="Logo" style="width:100px;" class="nav-pill" > </a>
+          <img src="codoacodo.png" alt="Logo" style="width:100px;" class="nav-pill" >Conf Bs As </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
@@ -33,7 +34,8 @@
                     <li class="nav-item"><a href="#oradores" target="_parent" class="nav-link">Los oradores </a></li>
                     <li class="nav-item"><a href="#fecha" class="nav-link">El lugar y la fecha</a></li>
                     <li class="nav-item"><a href="#conviertete" class="nav-link">Conviertete en orador </a></li>
-                    <li class="nav-item"><a href="tpjs.html "  class="nav-link" style="color: green;">Comprar tickets</a></li>
+                    <li class="nav-item"><a href="TRABAJOJS.html"  class="nav-link" style="color: green;">Comprar tickets</a></li>
+                    
                   </ul>
                 </div>            
 
@@ -70,7 +72,7 @@
           <a href="#conviertete" class="btn btn btn-outline-secondary">quiero ser orador </a>       
           </div>
           <div class="button1 " >
-            <a href="tpjs.html">  <button type="button" class="btn1" id="tickets">comprar tickets</button>     </a>     
+            <a href="TRABAJOJS.html">  <button type="button" class="btn1" id="tickets">comprar tickets</button>     </a>     
             </div>
           </div>
     </div>
@@ -98,31 +100,54 @@
 <h3>ORADORES</h3>
 </div>
 
-<div class="flex-container1 ">
-<div class="card" >
-    <img class="card-img-top " src="steve.jpg" alt="Card image">
-    <div class="card-body">
-      <h4 class="card-title">steve jobs</h4>
-      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, quae..</p>
-      
-    </div>
+<!-- Cards -->
+<div class="row row-cols-1 row-cols-md-3 g-3">
+  <div class="col">
+      <div class="card h-100">
+          <img src="steve.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <span class="badge bg-warning text-dark">Javascript</span>
+              <span class="badge bg-info text-light">React</span>
+              <h5 class="card-title">Steve Jobs</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                  voluptatibus
+                  perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                  incidunt?
+                  Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+          </div>
+      </div>
   </div>
-  <div class="card" >
-    <img class="card-img-top " src="bill.jpg" alt="Card image">
-    <div class="card-body">
-      <h4 class="card-title">bill gates</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, est!.</p>
-    
-    </div>
+  <div class="col">
+      <div class="card h-100">
+          <img src="bill.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <span class="badge bg-warning text-dark">Javascript</span>
+              <span class="badge bg-info text-light">React</span>
+              <h5 class="card-title">Bill Gates</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                  voluptatibus
+                  perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                  incidunt?
+                  Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+          </div>
+      </div>
   </div>
-  <div class="card" >
-    <img class="card-img-top" src="ada.jpeg" alt="Card image">
-    <div class="card-body ">
-      <h4 class="card-title">ada lovelace</h4>
-      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, ullam?</p>
-      
-    </div>
+  <div class="col">
+      <div class="card h-100">
+          <img src="ada.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <span class="badge bg-secondary">Negocios</span>
+              <span class="badge bg-danger">Startups</span>
+              <h5 class="card-title">Ada Lovelace</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
+                  voluptatibus
+                  perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                  incidunt?
+                  Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
+          </div>
+      </div>
   </div>
+</div>
 </div>
 <div class="flex-container2">
             
@@ -152,34 +177,54 @@
  <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieres hablar!</p>
  </div>
  <div class="flex-container5">
- <form>
-  <label for="fname">nombre:</label>
-  <input type="text" id="fname" name="fname" value="matias" size="30">
-  <label for="lname">apellido:</label>
-  <input type="text" id="lname" name="lname" value="sosa"size="30">
- </form>
+             <!-- Formulario -->
+             <form class="row g-1 gx-5">
+              <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" placeholder="Apellido">
+              </div>
+              <div class="mb-3">
+                  <textarea class="form-control fs-4" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+                  <p class="text-secondary"><sub>Recuerda incluir un título para tu charla</sub></p>
+              </div>
+              <div class="d-grid">
+                  <button class="btn text-white fs-5" style="background-color: #96c93e;" type="submit">Enviar</button>
+              </div>
+          </form>
+      </div>
  </div>
+ <footer class="text-center text-white">
+  <section class="mt-8">
+      <div class="row align-items-center d-inline-flex justify-content-center p-4">
+          <!-- Links del footer -->
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a>
+          </div>
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Contáctanos</a>
+          </div>
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Prensa</a>
+          </div>
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Conferencias</a>
+          </div>
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Términos y condiciones</a>
+          </div>
+          <div class="col gx-5">
+              <a href="#" class="text-white text-decoration-none">Privacidad</a>
+          </div>
+          <div class="col">
+              <a href="#" class="text-white text-decoration-none">Estudiantes</a>
+          </div>
+      </div>
+  </section>
 
- <div class="flex-container6">
- <form action="#">
-  <textarea name="message" rows="5" cols="120">Sobre que quieres hablar?</textarea>
-  
-  <div class="d-grid">
-    <button type="button" class="btn btn-block"><h5>Enviar</h5></button>
-  </div>
-  </form>
- </div>
-  <footer class="footer">
-    <div class="grupo" >
-     <div class="box"><h5>preguntas frecuentes</h5></div>
-     <div class="box"><h5>contactanos</h5></div>
-     <div class="box"><h5>prensa</h5></div>
-     <div class="box"><h5>conferencia</h5></div>
-     <div class="box"><h5>terminos y condiciones</h5></div>
-     <div class="box"><h5>privacidad</h5></div>
-     <div class="box"><h5>estudiantes</h5></div>
-    </div>
-  </footer>
+
+</footer>
 
 </div>
 </body>
